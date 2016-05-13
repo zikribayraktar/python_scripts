@@ -122,6 +122,14 @@ my_list = [1,2,3,4,5]
 for number in my_list:
     print 3*number
 
+# WHILE LOOP
+count = 0
+while count < 5: 
+    print count
+    count +=1
+	
+	
+	
 #----------------------------------------------------------
 #FUNCTIONS
 def cubed(n):
