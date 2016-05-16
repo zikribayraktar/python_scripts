@@ -100,11 +100,20 @@ print myCars[-1]			# negative indexing in Lists goes backwards in the list
 print myCars[2:]			#start position# to end of list
 print myCars[:3]			#from beginning of the list to end position#
 myCars.remove('Bentley')    #remove item from list
+print myCars[1::2]     #starting from element#1, every other until the end of list.
+print myCars[::-1]     #print list backwards
 
 # RANGE function
 range(stop)
 range(start, stop)
 range(start, stop, step)
+
+#List Comprehension
+even_sq_to_20 = [i*i for i in range(21) if i % 2 == 0]
+
+languages = ["HTML", "JavaScript", "Python", "Ruby"]
+print filter(lambda x : x == "Python", languages)
+
 #----------------------------------------------------------
 #CONTROL FLOW
 # IF ELSE CONDITIONAL STATEMENTS
@@ -122,13 +131,26 @@ my_list = [1,2,3,4,5]
 for number in my_list:
     print 3*number
 
+# enumerate	
+choices = ['pizza', 'pasta', 'salad', 'nachos']
+print 'Your choices are:'
+for index, item in enumerate(choices):
+    print index+1, item
+	
+# ZIP:
+list_a = [3, 9, 17, 15, 19]
+list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
+for a, b in zip(list_a, list_b):
+    print max(a,b)
+
+	
 # WHILE LOOP
 count = 0
 while count < 5: 
     print count
     count +=1
 	
-	
+
 	
 #----------------------------------------------------------
 #FUNCTIONS
@@ -156,6 +178,8 @@ del cars['Ferrari']  #delete by key.
 cars['Tesla'] = 200	 #change the value.
 cars['Honda'] = 30   #add new key-value to dictionary
 
+print cars.keys()
+print cars.values()
 
 #----------------------------------------------------------
 #----------------------------------------------------------
