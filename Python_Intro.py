@@ -237,7 +237,7 @@ datax = [1,2,3,4,5,6,7,8,9]
 datay = 2*datax
 histplot(datax)    #histogram plot of a 1D data
 scatterplot(datax, datay)   #scatter plot of data.
-barchart(datay, datax)   #bar chart of datay based on distribution in datax
+barchart(datax, datay)   #bar chart of datay based on distribution in datax
 
 
 
