@@ -81,7 +81,6 @@ str(pi)		#convert floating to string
 string_1 = 'NYC'
 string_2 = 'Sunday'
 z =  "I'm in %s. today is %s." % (string_1, string_2)
-
 #----------------------------------------------------------
 
 #----------------------------------------------------------
@@ -125,7 +124,6 @@ elif answer == "3" or answer == "4":
 else:
     print "You didn't pick properly!"
 
-
 # FOR LOOP
 my_list = [1,2,3,4,5]
 for number in my_list:
@@ -143,14 +141,11 @@ list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
 for a, b in zip(list_a, list_b):
     print max(a,b)
 
-	
 # WHILE LOOP
 count = 0
 while count < 5: 
     print count
     count +=1
-	
-
 	
 #----------------------------------------------------------
 #FUNCTIONS
@@ -182,11 +177,54 @@ print cars.keys()
 print cars.values()
 
 #----------------------------------------------------------
-#----------------------------------------------------------
-#----------------------------------------------------------
-#----------------------------------------------------------
-#----------------------------------------------------------
+# BITWISE operators
+print 5 >> 4  # Right Shift - shift right by 4 digits of the binary representation of 5 
+print 5 << 1  # Left Shift
+print 8 & 5   # Bitwise AND
+print 9 | 4   # Bitwise OR
+print 12 ^ 42 # Bitwise XOR
+print ~88     # Bitwise NOT
 
+print bin(3)  #prints the binary representation
+
+#----------------------------------------------------------
+# CLASS
+# class inherit from object.
+class Animal(object):  #user defined class start with a capital letter.
+    def __init__(self, name):   	
+        self.name = name
+        pass #useful when an action is expected and you do not want to do, simply 'pass'
+	
+class Monkey(Animal):   #new class Monkey inherits from class Animal
+   pass
+   
+my_pet = Animal()   #create an instance of the Animal class  
+
+#----------------------------------------------------------
+# File I/O
+my_list = [i**2 for i in range(1,11)]
+# Generates a list of squares of the numbers 1 - 10
+f = open("output.txt", "w")
+
+for item in my_list:
+    f.write(str(item) + "\n")
+f.close()
+
+
+# Read from a file:
+my_file = open ("output.txt", "r")
+print my_file.read()
+my_file.write("Hello!")
+print my_file.readline()
+my_file.close()
+
+# WITH ... AS ...      
+# automatically closes open file.
+with open("text.txt", "w") as textfile:
+	textfile.write("Success!")
+
+#----------------------------------------------------------
+#----------------------------------------------------------
 # Recursive Function
 def factorial(nv):
 	if nv==0:
