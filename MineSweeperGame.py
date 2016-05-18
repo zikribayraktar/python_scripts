@@ -1,4 +1,8 @@
-# NOT COMPLETE YET!
+######################################
+######### NOT COMPLETE YET!  #########
+######################################
+
+
 
 
 # Minesweeper GAME
@@ -18,10 +22,7 @@ while keepplaying:
     guess_col = []
     board_size = 9  #9by9 board - fixed
     numMines = 5 #number of mines
-    ship_row = [1, 2, 3, 4, 5]
-    ship_col = [1, 2, 3, 4, 5]
 
-    
     print '\n Welcome to the Minesweeper Game!'
     print '\n Here is the mine field!'
     print ' I placed %i mines! Let\'s clear them!' % numMines
@@ -30,7 +31,6 @@ while keepplaying:
     # Fill the board with O's:
     for x in range(board_size):
         board.append(["O"] * board_size)
-
 
     #Function to print the board on display:
     def print_board(board):
@@ -51,6 +51,10 @@ while keepplaying:
     def random_col(board):
         return randint(0, len(board[0]) - 1)
 
+    ###########################
+    ### COUNTINUE FROM HERE ###
+    ###########################
+    
     for i in range(numMines):
         #Pick a random location for the mines
         ship_row[i] = random_row(board)
