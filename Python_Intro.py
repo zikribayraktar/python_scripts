@@ -5,6 +5,10 @@
 """ This is a multiline comment that spans over
  multiple lines and combines multiple comments """
 #
+# Following are couple of online Python classes that I found useful:
+# Codeacademy - Python - https://www.codecademy.com/learn/python
+# Google - Python - https://developers.google.com/edu/python/
+#
 # For help on built-in functions:
 help(len)   #help for the built-in function len().
 #----------------------------------------------------------
@@ -212,11 +216,11 @@ f.close()
 
 
 # Read from a file:
-my_file = open ("output.txt", "r")
+my_file = open ("output.txt", "r")   	#open a NEW file to read (r), to write (w), to do both (r+).  To append (a+).
 print my_file.read()
 my_file.write("Hello!")
-print my_file.readline()
-my_file.close()
+print my_file.readline()   	#read a single line
+my_file.close()			#always close the file.
 
 # WITH ... AS ...      
 # automatically closes open file.
@@ -238,7 +242,5 @@ datay = 2*datax
 histplot(datax)    #histogram plot of a 1D data
 scatterplot(datax, datay)   #scatter plot of data.
 barchart(datax, datay)   #bar chart of datay based on distribution in datax
-
-
 
 #----------------------------------------------------------
