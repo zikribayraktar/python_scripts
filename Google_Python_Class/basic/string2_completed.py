@@ -16,9 +16,15 @@
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 def verbing(s):
-  # +++your code here+++
-  return
-
+  if len(s) >=3:
+    if s[-3:]=='ing':
+      rs = s + 'ly'
+    else:
+      rs = s + 'ing'
+  else:
+    rs =s    
+  return rs
+##################################################################
 
 # E. not_bad
 # Given a string, find the first appearance of the
@@ -29,9 +35,23 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-  # +++your code here+++
-  return
 
+  try:
+    bi = s.index('bad')  #index of bad - first apparance  
+  except ValueError:    #catch the ValueError
+    bi = 0  
+  
+  try:
+    ni = s.index('not')  #index of bad - first apparance  
+  except ValueError:     #catch the ValueError
+    ni = 0  
+  
+  if bi>ni:
+    rs = s[:ni] + 'good' + s[bi+3:]
+  else:
+    rs = s
+  return rs
+#############################################################################
 
 # F. front_back
 # Consider dividing a string into two halves.
@@ -41,9 +61,15 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-  # +++your code here+++
-  return
-
+  
+  saf=len(a)-(len(a)/2)  #figure out the mid point indexes
+  sbf=len(b)-(len(b)/2)
+  
+  #return the combined strings  
+  rtst = a[:saf]+b[:sbf]+a[saf:]+b[sbf:]
+  
+  return rtst
+#############################################################################
 
 # Simple provided test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
