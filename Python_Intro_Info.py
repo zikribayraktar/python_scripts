@@ -45,7 +45,7 @@ print 'value of pi is ' + str(ApplePi)
 print 'This isn\'t apple pie, it is blueberry!'
 
 # the letter from second place of the string. Remember, index starts from ZERO.
-second_letter = "MONTYPYTHON"[2] 
+second_letter = "MONTYPYTHON"[1] 
 print second_letter
 
 #----------------------------------------------------------
