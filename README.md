@@ -1,3 +1,3 @@
 ### This repo contains some simple Python codes/scripts
 
-### Note that there might be bugs and use it on your own risk!
+### Note that there might be bugs and use it at your own risk!
