@@ -22,6 +22,11 @@ dtNOW.hour	#current hour
 dtNOW.minute  #current minute
 dtNOW.second  #current second
 #----------------------------------------------------------
+# to get/change current working directory:
+import os as os
+os.getcwd()     #returns : 'C:\\Python27'
+os.chdir("D:\\MyDocuments\\TensorFlow")
+#----------------------------------------------------------
 print 'Hello World!'
 
 ApplePi = 3.1415
