@@ -23,9 +23,13 @@ dtNOW.minute  #current minute
 dtNOW.second  #current second
 #----------------------------------------------------------
 # to get/change current working directory:
-import os as os
+import os
 os.getcwd()     #returns : 'C:\\Python27'
 os.chdir("D:\\MyDocuments\\TensorFlow")
+#----------------------------------------------------------
+# to clear the command-line screen
+import os
+os.system('cls')
 #----------------------------------------------------------
 print 'Hello World!'
 
