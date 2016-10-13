@@ -36,6 +36,8 @@ print 'Hello World!'
 ApplePi = 3.1415
 print("%.2f" % ApplePi)	  #only prints two decimal places of the FLOATING number
 
+print 'value of pi is ' + str(ApplePi)
+
 #note the use of backslash to print special characters
 print 'This isn\'t apple pie, it is blueberry!'
 
@@ -48,7 +50,7 @@ print second_letter
 def myNumber(answer):
     myN = 12*answer
     return myN
-# Note that 4 space indentation is required 
+# Note that 4 space indentation is required (Google internally uses 2-space indentation)
 # as well as the semicolon at the end of DEF line.
 myNumber(5)  #call the function
 #----------------------------------------------------------
