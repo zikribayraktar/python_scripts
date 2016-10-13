@@ -79,6 +79,9 @@ my_bool = 3*4 != 3**4
 
 #----------------------------------------------------------
 # Strings
+# Python String Ref:
+# https://docs.python.org/3/library/stdtypes.html#string-methods
+
 a = 'Hello'
 b = ' ' 
 c = 'World'
