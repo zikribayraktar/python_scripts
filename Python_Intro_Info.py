@@ -9,6 +9,9 @@
 # Codeacademy - Python - https://www.codecademy.com/learn/python
 # Google - Python - https://developers.google.com/edu/python/
 #
+# Python.org Ref:
+# https://docs.python.org/3/library/functions.html
+#
 # For help on built-in functions:
 help(len)   #help for the built-in function len().
 #----------------------------------------------------------
