@@ -37,7 +37,8 @@ os.system('cls')
 print 'Hello World!'
 
 ApplePi = 3.1415
-print("%.2f" % ApplePi)	  #only prints two decimal places of the FLOATING number
+print ("%.2f" % ApplePi)	  #only prints two decimal places of the FLOATING number
+# note that use of () enables to write it long expanding to multiple lines.
 
 print 'value of pi is ' + str(ApplePi)
 
