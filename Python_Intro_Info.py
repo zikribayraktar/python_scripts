@@ -234,8 +234,8 @@ f.close()
 
 
 # Read from a file:
-my_file = open ("output.txt", "r")   	#open a NEW file to read (r), to write (w), to do both (r+).  To append (a+).
-print my_file.read()
+my_file = open ("output.txt", "r")   	#open a NEW file to read (r), to write (w), to do both (r+).  To append (a+).  'rU' Universal option
+print my_file.read()     # .read() will read the whole file into a single string
 my_file.write("Hello!")
 print my_file.readline()   	#read a single line
 my_file.close()			#always close the file.
@@ -244,6 +244,12 @@ my_file.close()			#always close the file.
 # automatically closes open file.
 with open("text.txt", "w") as textfile:
 	textfile.write("Success!")
+	
+# The "codecs" module provides support for reading a unicode file.
+import codecs
+f = codecs.open('foo.txt', 'rU', 'utf-8')
+for line in f:
+  # here line is a *unicode* string	
 
 #----------------------------------------------------------
 # Recursive Function
@@ -261,4 +267,8 @@ histplot(datax)    #histogram plot of a 1D data
 scatterplot(datax, datay)   #scatter plot of data.
 barchart(datax, datay)   #bar chart of datay based on distribution in datax
 
+#----------------------------------------------------------
+
+#to have the code exit when this runs.
+sys.exit(0) 
 #----------------------------------------------------------
