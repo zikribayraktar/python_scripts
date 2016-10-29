@@ -272,3 +272,12 @@ barchart(datax, datay)   #bar chart of datay based on distribution in datax
 #to have the code exit when this runs.
 sys.exit(0) 
 #----------------------------------------------------------
+# Python Regular Expressions:
+# 're' module provides a powerful way for matching text patters.
+# re.search() takes patternStr and searches in the searchInString below.
+# result of this search is stored in the 'matchingStr'
+# matchingStr = re.search(patternStr, searchInStr)
+
+# LOOK UP GOOGLE PYTHON CLASS for better explanation:
+# https://developers.google.com/edu/python/regular-expressions
+#----------------------------------------------------------
